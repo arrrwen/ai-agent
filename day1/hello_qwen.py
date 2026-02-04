@@ -12,7 +12,7 @@ client = OpenAI(
 resp = client.chat.completions.create(
     model="qwen-plus",
     messages=[
-        {"role": "system", "content": "你是一个严谨的技术助手"},
+        {'role': "system", "content": "你是一个严谨的技术助手"},
         {"role": "user", "content": "用一句话解释什么是 RAG"}
     ],
 )

@@ -1,0 +1,18 @@
+从数据库读取任意50个商品的所有评论信息，利用LLM分析出这50个商品用户的痛点和需求 结果用excel呈现
+
+数据库配置
+
+SQL_SERVER_CONFIG = {
+    # 服务器地址
+    'SERVER': '121.46.231.162,51433',
+    # 数据库名称
+    'DATABASE': 'Compass_BP',
+    # 用户名（如果使用SQL Server认证）
+    'UID': 'compassBase',
+    # 密码（如果使用SQL Server认证）
+    'PWD': 'hSG55#@$8D2AHJF;',
+    # 是否使用Windows认证（如果为True，则忽略UID和PWD）
+    'USE_WINDOWS_AUTH': False,
+}
+
+表名：dsa_jd_comments_detail 商品id字段：product_id
